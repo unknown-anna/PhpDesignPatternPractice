@@ -1,6 +1,6 @@
 <?php
 
-require_once('TemplateMethod/AbstractClass/AbstractDisplay.class.php');
+require_once('AbstractClass/AbstractDisplay.class.php');
 
 class ListDisplay extends AbstractDisplay {
 

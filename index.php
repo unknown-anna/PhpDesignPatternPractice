@@ -1,19 +1,23 @@
-<?php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section>
 
-ini_set ('display_errors', 'on');
-ini_set ('error_reporting', E_ALL);
+        <h3>PHP Design Pattern Practice</h3>
 
-require_once('TemplateMethod/ConcreteClass/ListDisplay.class.php');
-require_once('TemplateMethod/ConcreteClass/TableDisplay.class.php');
+        <ul>
+            <li><a href="TemplateMethod/">TemplateMethod</a></li>
+            <li><a href="Singleton/">Singleton</a></li>
+        </ul>
 
-$data = array('Design Pattern',
-        'Gang of Four',
-        'Template Method Sample1',
-        'Template Method Sample2');
+    </section>
 
-$display_list = new ListDisplay($data);
-$display_table = new TableDisplay($data);
-
-$display_list->display();
-echo '<hr>';
-$display_table->display();
+</body>
+</html>
