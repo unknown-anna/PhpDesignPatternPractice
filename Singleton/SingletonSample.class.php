@@ -11,7 +11,7 @@ class SingletonSample {
     /**
      * 唯一のインスタンスを保持する変数
      */
-    private $instance;
+    private static $instance;
 
 
     /**
@@ -32,11 +32,36 @@ class SingletonSample {
     public static function getInstance() {
 
         if(!isset(self::$instance)) {
-            
+
             self::$instance = new SingletonSample();
             echo 'a SingletonSample instance was created !';
 
         }
+
+        return self::$instance;
     }
+
+
+    /**
+     * IDを返す
+     * @return インスタンスのID
+     */
+    public function getID() {
+
+        return $this->id;
+
+    }
+
+
+    /**
+     * このインスタンスの複製を許可しないようにする
+     * @throws RuntimeException
+     */
+    public final function __clone() {
+        throw new RuntimeException('Clone is not allowed against'.get_class($this));
+    }
+
+
+
 }
 

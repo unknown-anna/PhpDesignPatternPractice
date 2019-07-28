@@ -13,8 +13,9 @@
         <h3>PHP Design Pattern Practice</h3>
 
         <ul>
-            <li><a href="TemplateMethod/">TemplateMethod</a></li>
+            <li><a href="TemplateMethod/">Template Method</a></li>
             <li><a href="Singleton/">Singleton</a></li>
+            <li><a href="ClassAndInstance/">Class And Instance</a></li>
         </ul>
 
     </section>
