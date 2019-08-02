@@ -15,6 +15,16 @@
         <ul>
             <li><a href="TemplateMethod/">Template Method</a></li>
             <li><a href="Singleton/">Singleton</a></li>
+            <li><a href="Adapter/">Adapter</a></li>
+        </ul>
+
+    </section>
+
+    <section>
+
+        <h3>PHP Practice</h3>
+
+        <ul>
             <li><a href="ClassAndInstance/">Class And Instance</a></li>
         </ul>
 
